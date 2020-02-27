@@ -20,9 +20,10 @@ public class PlayerBehaviour : MonoBehaviour
 	[SerializeField] private bool isJumping = false;    // Get's triggered when the player jumps
 	[SerializeField] private AnimationCurve jumpfallOff = default;  // The Jump fall off of the jump event. Allows for a nice custom curve.
 	[SerializeField] private float jumpMultiplier = default;    // How much upwards force is applied when pressing the jump button
-
+	[Space]
 	[SerializeField] private KeyCode jumpKey = default; // The key which the player has to press to jump.
-
+	[Space]
+	[SerializeField] private Transform weaponTransform = default;	// The transform for the weapon.
 	private CharacterController charController = default;   // The Character controller variable.
 
 	#endregion
