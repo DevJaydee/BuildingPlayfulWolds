@@ -39,6 +39,9 @@ public class GunBehaviour : MonoBehaviour
 	{
 		if(other.CompareTag("Player"))
 		{
+			transform.SetParent(other.GetComponent<PlayerBehaviour>().WeaponTransform);
+			transform.position = transform.parent.position;
+			transform.rotation = transform.parent.rotation;
 			gunState = GunState.Equiped;
 			Destroy(interactionCollider);
 		}

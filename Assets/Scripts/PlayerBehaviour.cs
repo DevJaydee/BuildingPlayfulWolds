@@ -28,6 +28,10 @@ public class PlayerBehaviour : MonoBehaviour
 
 	#endregion
 
+	#region Getters and Setters
+	public Transform WeaponTransform { get => weaponTransform; set => weaponTransform = value; }
+	#endregion
+
 	/// <summary>
 	/// Get the Character Controller
 	/// </summary>
