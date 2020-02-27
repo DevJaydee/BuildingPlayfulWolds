@@ -45,6 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerObject: {fileID: 0}
   playerBehaviour: {fileID: 0}
+  playerCameraBehaviour: {fileID: 0}
   pauseMenuKey: 27
   pauseMenuObject: {fileID: 0}
   pauseMenuEnableb: 0
