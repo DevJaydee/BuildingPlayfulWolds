@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7877823203038752333}
   - component: {fileID: 7877823203038752334}
+  - component: {fileID: 8752333129086586016}
   m_Layer: 0
   m_Name: MachineGun
   m_TagString: Untagged
@@ -44,6 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6933d1589304a324a89f5d2c7dc13d73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gunState: 0
+  interactionCollider: {fileID: 8752333129086586016}
   damage: 50
   range: 1000
   hitMask:
@@ -52,6 +55,19 @@ MonoBehaviour:
   hitParticles: {fileID: 8617354624146884092, guid: 32fc83993edfba64bb243ff0b3012ef6,
     type: 3}
   fpsCam: {fileID: 0}
+--- !u!65 &8752333129086586016
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7877823203038752335}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &7877823201470417204
 PrefabInstance:
   m_ObjectHideFlags: 0

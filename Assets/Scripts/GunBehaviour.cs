@@ -18,6 +18,8 @@ public class GunBehaviour : MonoBehaviour
 	private void Awake()
 	{
 		fpsCam = Camera.main;
+		interactionCollider = GetComponent<BoxCollider>();
+		interactionCollider.isTrigger = true;
 	}
 
 	private void Update()

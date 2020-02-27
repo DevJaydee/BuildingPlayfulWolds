@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 574970188804151514}
   - component: {fileID: 574970188804151515}
+  - component: {fileID: 3053080563817076679}
   m_Layer: 9
   m_Name: Pistol
   m_TagString: Untagged
@@ -45,6 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6933d1589304a324a89f5d2c7dc13d73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gunState: 0
+  interactionCollider: {fileID: 3053080563817076679}
   damage: 34
   range: 1000
   hitMask:
@@ -53,6 +56,19 @@ MonoBehaviour:
   hitParticles: {fileID: 8617354624146884092, guid: 32fc83993edfba64bb243ff0b3012ef6,
     type: 3}
   fpsCam: {fileID: 0}
+--- !u!65 &3053080563817076679
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574970188804151513}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &574970190014327537
 GameObject:
   m_ObjectHideFlags: 0
